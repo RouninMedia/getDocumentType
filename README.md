@@ -14,7 +14,7 @@ function getDocumentType ($Document_URL) {
 	
    if (substr($Header, 0, 13) === 'Content-Type:') {
 
-      return explode(';', explode(' ', $Header)[1])[0]."\n";
+      return explode(';', explode(' ', $Header)[1])[0];
     }
   }
 }
